@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.jasdjf.translate</id>
+  <name>TranslateEn</name>
+  <version>1.0</version>
+  <vendor email="jasdjf@163.com">Jasdjf</vendor>
+
+  <description><![CDATA[
+      Translate selected world.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First edition
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Translate.TranslateAction" class="com.jasdjf.translate.TranslateAction" text="Translate"
+            description="translate selected world">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
